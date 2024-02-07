@@ -653,4 +653,7 @@ textarea {
     .pagefive-flex textarea::placeholder {
         font-size: 0.8em;
     }
+    .submit {
+        width: 15vw
+    }
 }
