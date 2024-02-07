@@ -1,0 +1,656 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: black;
+    scroll-behavior: smooth;
+    transition: 300ms;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+:root {
+    --background-color-one: rgb(215, 189, 246);
+    --background-color-two: rgb(1, 1, 36);
+    --footer-header-button-color: black;
+}
+.header {
+    background-color: var(--footer-header-button-color);
+    height: 7.5vh;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    top: 0;
+}
+.header-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;  
+    width: 100%;
+    height: 7.5vh;
+}
+.header-children {
+    flex-basis: 7.5vw;
+    margin: 1vw;
+    display: flex;
+    justify-content: center;
+    font-size: 1em;
+}
+.header a {
+    color: aliceblue;
+}
+.header-menu {
+    display: none;
+}
+.header-child-one {
+    flex: 1 1;
+    margin-left: 5vmax;
+    justify-content: flex-start;
+}
+.header-child-five {
+    margin-right: 5vw;
+}
+.home-button {
+    position: fixed;
+    z-index: 10;
+    bottom: 2vh;
+    right: 2vw;
+    height: 4vmax;
+    width: 4vmax;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--footer-header-button-color);
+    border-radius: 5000px;
+    opacity: 0.3;
+}
+.home-button a {
+    color: white;
+    margin-bottom: 3px;
+    font-size: 40px;
+}
+.home-button:hover {
+    opacity: 1;
+}
+.pageone {
+    background-color: var(--background-color-one);
+    height: 92.5vh;
+    padding-top: 7.5vh;
+}
+.pageone-flex {
+    display: flex;
+    flex-direction: row;
+    margin-top: 7.5vh;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10vw;
+}
+.pageone-flex img {
+    width: 25vw;
+    margin-right: 15vw;
+    z-index: 0;
+}
+.pageone-flex div {
+    margin-left: 15vw;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5vmin;
+    align-self: flex-start;
+    margin-top: 5vmin;
+    z-index: 1;
+}
+.pageone-flex p {
+    text-indent: 2vmax;
+    line-height: 2.5vmax;
+    overflow: auto;
+    height: auto;
+    font-size: 1em;
+}
+.pageone-flex h3 {
+    font-size: 3em;
+    align-self: flex-start;
+    text-align: left;
+}
+.pagetwo {
+    background-color: var(--background-color-two);
+    height: 92.5vh;
+    padding-top: 7.5vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+.pagetwo-flex {
+    display: grid;
+    grid-template-rows: 40vh 40vh;
+    margin: 2.5vh 0 2.5vh 0;
+    gap: 5vh;
+}
+.pagetwo-flex p {
+    color: white;
+    padding: 1vmax;
+    width: 50vmax;
+    margin: 0 5vw 0 5vw;
+    font-size: 1.2em;
+    background-color: rgb(159, 92, 240);
+    box-shadow: 1vmax 1vmax rgb(96, 43, 160);
+    overflow-y: auto;
+}
+.pagetwo-flex img {
+    height: 40vmin;
+    width: 40vmin;
+}
+.pagetwo-flex-one {
+    display: flex;
+    margin-left: 5vw;
+    justify-content: space-between;
+    width: 80vw;
+}
+.pagetwo-flex-two {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-right: 5vw;
+    width: 80vw;
+    justify-content: space-between;
+}
+.pagethree {
+    background-color: var(--background-color-one);
+    height: 92.5vh;
+    padding-top: 7.5vh;
+}
+.pagethree-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 92.5vh;
+    width: 100%;
+}
+.pagethree-flex div{
+    z-index: 0;
+}
+.pagethree-flex-gallery {
+    display: grid;
+    grid-template-columns: 16vmax 16vmax 16vmax;
+    gap: 1vmax;
+    grid-template-rows: 16vmax 16vmax;
+}
+.pagethree-flex-gallery div {
+    height: 16vmax;
+    width: 16vmax;
+    overflow: hidden;
+}
+.pagethree-flex-gallery div:hover {
+    overflow: hidden;
+    z-index: 10;
+    transform: scale(1.25) rotate(15deg);
+}
+.pagethree-flex img {
+    height: 30vmax;
+}
+.pagethree-flex-image1 img{
+    height: 20vmax;
+    transform: translateX(-4vmax);
+}
+.pagethree-flex-image2 img{
+    height: 16vmax;
+}
+.pagethree-flex-image3 img{
+    height: 18vmax;
+    transform: translateX(-1vmax);
+}
+.pagethree-flex-image4 img{
+    height: 20vmax;
+    transform: translateX(-4vmax);
+}
+.pagethree-flex-image5 img{
+    height: 18vmax;
+}
+.pagethree-flex-image6 img{
+    height: 20vmax;
+    transform: translateX(-4vmax);
+}
+.pagethree-flex-text {
+    margin: 0 0 5vmin 10vw;
+    width: 50%;
+    align-self: flex-start;
+}
+.pagethree-flex-text h3 {
+    font-size: 3em;
+}
+.pagefour {
+    background-color: var(--background-color-two);
+    height: 92.5vh;
+    padding-top: 7.5vh;
+}
+.pagefour-flex {
+    display: flex;
+    height: 92.5vh;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.pagefour-flex-list {
+    display: grid;
+    grid-template-columns: repeat(3, 15vw);
+    gap: 22.5vmin;
+    margin: 0 0 5vmin 0;
+}
+.pagefour-flex img {
+    height: 40vmin;
+}
+.pagefour-flex h3, .pagefour-flex p{
+    color: white;
+}
+.pagefour-flex-titel {
+    margin: 5vmin 0 5vmin 5vmax;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(159, 92, 240);
+    padding: 1vmax;
+    box-shadow: 1vmax 1vmax rgb(96, 43, 160);
+    width: 60%;
+    align-self: flex-start;
+}
+.pagefour li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.pagefour-flex div:not(.pagefour-flex-titel, .pagefour-flex-list-image) {
+    text-align: center;
+    background-color: rgb(159, 92, 240);
+    margin: 2vmin 0 0 0;
+    padding: 1vmin;
+    height: 15vmin;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow:  1vmax 1vmax rgb(96, 43, 160);
+    width: 40vmin;
+}
+.pagefour-flex h3 {
+    margin: 0 0 2vmin 0;
+    font-size: 2em;
+    align-self: flex-start;
+}
+.pagefive {
+    background-color: var(--background-color-one);
+    height: 92.5vh;
+    padding-top: 7.5vh;
+}
+.pagefive-flex {
+    height: 92.5vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+.pagefive-flex fieldset  {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    outline: none;
+    border: 0px solid;
+}
+.pagefive-flex form {
+    display: grid;
+    grid-template-columns: 40vmax 40vmax;
+    grid-template-rows: repeat(3, 7.5vmin) 25vmin;
+    margin: 0 0 12vh 0;
+    gap: 1vmax;
+}
+.email, .country, .emailbody {
+    grid-column: span 2;
+}
+textarea {
+    resize: none;
+}
+.emailbody:not(.submit) {
+    align-self: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+}
+.submit {
+    width: 7.5%;
+    align-self: flex-end;
+    margin: 1vmin 0 0 0;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: white;
+    border: 1px transparent;
+    padding: 0.3vmax;
+}
+.pagefive-flex footer {
+    width: 100%;
+    height: 25vh;
+    background-color: var(--footer-header-button-color);
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pagefive-flex ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5vw;
+}
+.pagefive-flex li:nth-child(1) img {
+    height: 12.5vmin;
+}
+.pagefive-flex li:nth-child(2) img {
+    height: 9vmin;
+}
+.pagefive-flex li:nth-child(3) img {
+    height: 6vmin;
+}
+.pagefive-flex li {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    width: 15vmax;
+}
+.pageone .background img {
+    margin-top: 7.5vh;
+    width: 100%;
+    height: 92.5vh;
+    position: absolute;
+    top: 0;
+    opacity: 0.5;
+}
+.pagethree .background img {
+    margin-top: 200vh;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    opacity: 0.5;
+}
+.pagefive .background img {
+    margin-top: 400vh;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    opacity: 0.5;
+    z-index: 0;
+}
+@media (max-width: 64em) and (orientation: portrait) {
+    .home-button {
+        height: 6vmax;
+        width: 6vmax;
+        opacity: 0.5;
+    }
+    .home-button a {
+        font-size: 30px;
+    }
+    .header-children:not(.header-child-one), .header-menu-children {
+        a { 
+            color: transparent;
+        }
+        transition: 0ms;
+        scroll-behavior: inherit;
+        visibility: hidden;
+        position: absolute;
+    }
+    .header-flex {
+        justify-content: center;
+    }
+    .header-child-one {
+        width: 0%;
+        margin-left: 5vw;
+    }
+    .header-menu {
+        display: flex;
+        margin-right: 5vw;
+        justify-content: center;
+        font-size: 14px;
+        width: 20%;
+        background-color: black;
+    }
+    .header-menu h2 {
+        color: white;
+        justify-self: flex-end;
+    }
+    .header-menu:hover {
+        height: 50vh;
+        width: 35vw;
+        background-color: black;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+        h2 {
+            color: transparent;
+            visibility: hidden;
+        }
+        h3 a{
+            color: white;
+        }
+        .header-menu-children {
+            visibility: visible;
+            position: static;
+        }
+        div {
+            height: 5vh;
+        }
+    }
+    .pageone-flex {
+        flex-direction: column;
+        justify-content: flex-start;
+        margin-top: 5vh;
+        height: 92.5vh;
+    }
+    .pageone-flex img {
+        width: 25vmax;
+        margin-left: 10vw;
+    }
+    .pageone-flex div {
+        margin-left: 5vw;
+        width: 90vw;
+    }
+    .pageone-flex p {
+        text-indent: 2em;
+        line-height: 1.5em;
+        height: 25vh;
+        font-size: 0.8em;
+    }
+    .pageone-flex h3 {
+        font-size: 2em;
+    }
+    .pagetwo {
+        justify-content: flex-start;
+    }
+    .pagetwo-flex {
+        grid-template-rows: 40vmax 40vmax;
+    }
+    .pagetwo-flex p {
+        width: 80vw;
+        font-size: 0.9em;
+        box-shadow: -1vmax 1vmax rgb(96, 43, 160);
+    }
+    .pagetwo-flex-one {
+        margin-left: 0;
+        width: 100vw;
+        flex-direction: row-reverse;
+    }
+    .pagetwo-flex-one img {
+        margin-right: 5vmin;
+    }
+    .pagetwo-flex-one p {
+        margin-left: 5vw;
+        height: 30vmax;
+    }
+    .pagetwo-flex-two {
+        flex-direction: row;
+        width: 100vw;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .pagetwo-flex-two img {
+       margin-left: 5vmin;
+       margin-right: 0;
+    }
+    .pagetwo-flex-two p {
+        align-self: flex-start;
+        box-shadow: 1vmax 1vmax rgb(96, 43, 160);
+        height: 30vmax;
+    }
+    .pagethree-flex {
+        justify-content: flex-start;
+    }
+    .pagethree-flex-gallery {
+        grid-template-columns: 16vmax 16vmax;
+    }
+    .pagethree-flex-gallery div {
+        height: 16vmax;
+        width: 16vmax;
+        overflow: hidden;
+    }
+    .pagethree-flex-text {
+        margin: 0 0 5vh 5vw;
+        width: 90%;
+        align-self: flex-start;
+    }
+    .pagethree-flex-text p {
+        font-size: 1em;
+    }
+    .pagethree-flex-text h3 {
+        font-size: 3em;
+        margin-bottom: 2vh;
+    }
+    .pagefour-flex-titel {
+        margin: 0 0 10vmin 5vmin;
+        padding: 1vmax;
+        box-shadow: 1vh 1vh rgb(96, 43, 160);
+        width: 85%;
+        align-self: flex-start;
+        height: 17.5vh;
+        overflow-y: auto;
+    }
+    .pagefour-flex-list {
+        display: grid;
+        grid-template-columns: 85%;
+        gap: 5vh;
+        margin: 0 0 0 0;
+    }
+    .pagefour-flex img {
+        height: 20vh;
+    }
+    .pagefour-flex-list li {
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100vw;
+        align-items: flex-start;
+        height: 17.5vh;
+    }
+    .pagefour-flex-list-image {
+        height: 17.5vh;
+    }
+    .pagefour-flex h3, .pagefour-flex p{
+        color: white;
+    }
+    .pagefour-flex div:not(.pagefour-flex-titel, .pagefour-flex-list-image) {
+        text-align: center;
+        margin: 0 0 0 0;
+        box-shadow: 1vmin 1vmin rgb(96, 43, 160);
+        width: 40vw;
+        height: 15vh;
+    }
+    .pagefour-flex h3 {
+        margin: 0 0 1vh 0;
+        font-size: 1.5em;
+    }
+    .pagefive-flex form {
+        display: grid;
+        grid-template-columns: 40vw 40vw;
+        grid-template-rows: repeat(3, 7.5vh) 25vh;
+        margin: 0 0 16vh 0;
+        gap: 1vw;
+    }
+    .firstname input {
+        width: 39vw;
+    }
+    .lastname input{
+        width: 39vw;
+    }
+    textarea {
+        width: 80vw;
+    }
+    .submit {
+        width: 20vw;
+    }
+    .pagefive-flex li {
+        justify-content: space-around;
+        width: 30vw;
+    }
+}
+@media (max-width: 64em) and (orientation: landscape) {
+    .home-button {
+        height: 6vmax;
+        width: 6vmax;
+        opacity: 0.5;
+    }
+    .home-button a {
+        font-size: 30px;
+    }
+    .header-children {
+        font-size: 0.7em;
+    }
+    .home-button a {
+        font-size: 40px;
+    }
+    .pageone-flex p {
+        font-size: 0.7em;
+    }
+    .pageone-flex h3 {
+        font-size: 1.5em;
+    }
+    .pagetwo-flex p {
+        font-size: 0.8em;
+    }
+    .pagethree-flex-gallery {
+        display: grid;
+        grid-template-columns: repeat(3, 14vmax);
+        gap: 1vmax;
+        grid-template-rows: repeat(2, 14vmax);
+    }
+    .pagethree-flex-gallery div {
+        height: 14vmax;
+        width: 14vmax;
+    }
+    .pagethree-flex-text p {
+        font-size: 0.6em;
+    }
+    .pagethree-flex-text h3 {
+        font-size: 1.5em;
+    }
+    .pagefour-flex h3 {
+        margin: 0 0 2vmin 0;
+        font-size: 1.1em;
+        align-self: flex-start;
+    }
+    .pagefour-flex p {
+        font-size: 0.6em;
+    }
+    .pagefive-flex h3 {
+        font-size: 0.8em;
+    }
+    .pagefive-flex textarea {
+        height: 20vh;
+    }
+    .pagefive-flex form {
+        display: grid;
+        grid-template-columns: 40vw 40vw;
+        grid-template-rows: repeat(3, 7.5vh) 25vh;
+        margin: 0 0 8vh 0;
+        gap: 5vh;
+    }
+    .pagefive-flex textarea::placeholder {
+        font-size: 0.8em;
+    }
+}
